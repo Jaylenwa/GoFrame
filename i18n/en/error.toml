@@ -1,0 +1,6 @@
+IBadRequest = "Invalid parameter"
+IUnauthorized = "Unauthorized"
+IForbidden = "Forbidden"
+INotFound = "Record does not exist"
+IConflict = "The request is conflicts"
+IInternalServerError = "Internal Server Error"

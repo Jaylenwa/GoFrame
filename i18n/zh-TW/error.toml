@@ -1,0 +1,6 @@
+IBadRequest = "參數不合法"
+IUnauthorized = "授權無效"
+IForbidden = "禁止訪問"
+INotFound = "資源不存在"
+IConflict = "請求沖突"
+IInternalServerError = "內部錯誤"

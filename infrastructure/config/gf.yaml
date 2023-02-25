@@ -1,0 +1,44 @@
+# HTTP Server.
+server:
+  lang: "en"
+  host: "0.0.0.0"
+  public_port: "8080" # 对外端口
+  server_name: "core-app-sap-edgp"
+  mode: "debug"
+  is_debug: "true" # 从sap本地读取数据
+
+
+# Database.
+mysql:
+  max_open_conns: 50
+  max_idle_conns: 10
+  conn_max_lifetime: 500
+  log_mode: 2 # gorm错误级别; 1: Silent, 2:Error,3:Warn,4:Info
+  slow_threshold: 10 # 慢查询
+  db_host: 127.0.0.1
+  db_port: 3306
+  username: root
+  password: wjlroot
+  db_name: capp_edgp
+  charset: utf8
+  model_max_open_conns: 50
+  model_max_idle_conns: 10
+  model_conn_max_lifetime: 500
+  model_log_mode: 2 # gorm错误级别; 1: Silent, 2:Error,3:Warn,4:Info
+  model_slow_threshold: 10 # 慢查询
+
+
+# Log.
+log:
+  log_file_dir: "./tmp"
+  app_name: "gf"
+  max_size: 512
+  max_backups: 64
+  max_age: 7
+
+# nsq.
+nsq:
+  nsq_producer_host: "10.4.7.88"
+  nsq_producer_port: 4150
+  nsq_subscribe_host: "10.4.7.88"
+  nsq_subscribe_port: 4150

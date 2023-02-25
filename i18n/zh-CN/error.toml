@@ -1,0 +1,6 @@
+IBadRequest = "参数不合法"
+IUnauthorized = "授权无效"
+IForbidden = "禁止访问"
+INotFound = "资源不存在"
+IConflict = "请求冲突"
+IInternalServerError = "内部错误"
